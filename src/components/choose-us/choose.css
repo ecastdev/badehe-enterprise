@@ -1,0 +1,34 @@
+#chose {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
+    
+}
+
+#chose::before {
+    content: '';
+    /* background-color: rgb(54, 3, 70); */
+    background: linear-gradient(to right, rgb(39, 22, 67),rgb(27, 1, 25));
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.6;
+    --tw-blur: blur(16px);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate)
+     var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+    
+}
+
+.lineParent{
+  overflow: hidden;
+  .lineChildren{
+    transform: translate(0, 500px);
+  }
+}
