@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/badehe-enterprise/static/css/main.bf5d8fd5.css",
+    "main.js": "/badehe-enterprise/static/js/main.ba761b24.js",
+    "static/js/453.b320933b.chunk.js": "/badehe-enterprise/static/js/453.b320933b.chunk.js",
+    "static/media/finacial.jpg": "/badehe-enterprise/static/media/finacial.72106d2a5edd2351e75c.jpg",
+    "static/media/badehe.mp4": "/badehe-enterprise/static/media/badehe.e8cf2c3ac646671b4090.mp4",
+    "static/media/cctv.jpg": "/badehe-enterprise/static/media/cctv.2ab4d5479427d9e9c659.jpg",
+    "static/media/website.jpg": "/badehe-enterprise/static/media/website.9ba0183330fc2d77497a.jpg",
+    "static/media/electrical.jpg": "/badehe-enterprise/static/media/electrical.9a7dacacbc3e1534a394.jpg",
+    "static/media/banner.jpg": "/badehe-enterprise/static/media/banner.a1d8ddf639a9119a6764.jpg",
+    "static/media/foodsupply.jpg": "/badehe-enterprise/static/media/foodsupply.fa680fba00963f8f61a8.jpg",
+    "static/media/bussiness.png": "/badehe-enterprise/static/media/bussiness.10d71111850931a60449.png",
+    "static/media/leticia.jpg": "/badehe-enterprise/static/media/leticia.0a70a9eac7a2d548a462.jpg",
+    "static/media/7-2-technology-picture.png": "/badehe-enterprise/static/media/7-2-technology-picture.3dbe6e71f9cb483ef70d.png",
+    "static/media/oil.jpg": "/badehe-enterprise/static/media/oil.caabe95b9e5405b1cabc.jpg",
+    "static/media/80125-art-character-question-fictional-mark-animation-cartoon.png": "/badehe-enterprise/static/media/80125-art-character-question-fictional-mark-animation-cartoon.0923725a1a08ee198bdc.png",
+    "static/media/anitha alex.jpg": "/badehe-enterprise/static/media/anitha alex.2a326066baee4a3ab8a7.jpg",
+    "static/media/Peter serikali.jpg": "/badehe-enterprise/static/media/Peter serikali.a819c3227e6c7abfce50.jpg",
+    "static/media/ally juma.jpg": "/badehe-enterprise/static/media/ally juma.3bc11ce54a4175e58252.jpg",
+    "static/media/stephen.jpg": "/badehe-enterprise/static/media/stephen.5c6cabdcd99a0333f75f.jpg",
+    "static/media/logo_size-removebg-preview.png": "/badehe-enterprise/static/media/logo_size-removebg-preview.e38ca367ad73dd642fbc.png",
+    "index.html": "/badehe-enterprise/index.html",
+    "main.bf5d8fd5.css.map": "/badehe-enterprise/static/css/main.bf5d8fd5.css.map",
+    "main.ba761b24.js.map": "/badehe-enterprise/static/js/main.ba761b24.js.map",
+    "453.b320933b.chunk.js.map": "/badehe-enterprise/static/js/453.b320933b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf5d8fd5.css",
+    "static/js/main.ba761b24.js"
+  ]
+}
