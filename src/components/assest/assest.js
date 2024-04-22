@@ -15,5 +15,6 @@ import stephe from './stephen.jpg';
 import badevits from './badehe.mp4';
 import ally from './ally juma.jpg';
 import questions  from './80125-art-character-question-fictional-mark-animation-cartoon.png';
-import technology from './7-2-technology-picture.png'
-export  {dataAnalyis, food, cctv,electrical,oil,website,finacial,banner,repair,computer,leticia,peter,anitha,stephe,badevits,ally,questions,technology}; 
+import technology from './7-2-technology-picture.png';
+import  logo from './logo_size-removebg-preview.png';
+export  {dataAnalyis,logo, food, cctv,electrical,oil,website,finacial,banner,repair,computer,leticia,peter,anitha,stephe,badevits,ally,questions,technology}; 

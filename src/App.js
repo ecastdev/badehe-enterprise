@@ -113,7 +113,7 @@ function App() {
           element: <Cv/>
         },
         {
-          path: "expore_pages/finacial",
+          path: "explore_pages/finacial",
           element: <Finacial/>
         },
         {

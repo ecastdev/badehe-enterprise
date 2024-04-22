@@ -8,6 +8,7 @@ import { auth, app } from "./chatfirebase";
 import { GoogleAuthProvider, onAuthStateChanged, signInWithPopup } from 'firebase/auth';
 import { getFirestore,onSnapshot, collection, addDoc, orderBy, query, serverTimestamp} from 'firebase/firestore';
 import {  useEffect } from 'react';
+import { logo } from "../../assest/assest";
 
 
 const db = getFirestore(app) ;
@@ -96,9 +97,9 @@ const Instagram1 = () => {
         <nav className=" fixed z-50  top-0  w-full py-3 backdrop-blur-lg border-b border-neutral-700/80">
             <div className="container px-4 mx-auto relative text-sm ">
                 <div className=" flex  justify-between items-center ">
-                    {/* <div className=" flex items-center flex-shrink-0">
-                        <img className="h-10 w-10 mr-2 rounded-2xl" src={logo} alt="logo"/>
-                    </div> */}
+                    <div className=" flex items-center flex-shrink-0">
+                        <img className="h-16 w-16 lg:h-24 lg:w-32 mr-2 " src={logo} alt="logo"/>
+                    </div>
                     <ul className=" hidden lg:flex ml-14 space-x-12">
                         {nav.map((items, index) =>(
                             <li className=" hover:bg-gradient-to-r from-rose-900 to-rose-400" key={index}>
@@ -107,7 +108,7 @@ const Instagram1 = () => {
                             </li>
                         ))}
                     </ul>
-                    <div className="flex-row space-x-6"> 
+                    <div className="flex-row space-x-6 hidden lg:block "> 
                         <YouTube color="secondary" onClick={YouTube1}/>
                         <Instagram color="secondary" onClick={Instagram1}/>
                         <FacebookRounded color="secondary" onClick={facebook1}/>
@@ -121,16 +122,23 @@ const Instagram1 = () => {
                         <button className='mb-8  bg-rose-900 rounded-[10px] p-1 my-0' onClick={() => auth.signOut()}>Logout</button>
                         </div>
                     ): (
-                        <Fab variant="extended" color="secondary" onClick={handleGoogleLogin}>
+                       <Fab variant="extended" color="secondary" onClick={handleGoogleLogin}>
                         <NavigationIcon sx={{ mr: 1 , color:'secondary'}} />
                         Sign in
-                    </Fab>
+                    </Fab> 
 
                     )}
                     
                 </div>
                 
                 <div className=" lg:hidden md:flex justify-end flex-col">
+                  <div className="flex-row space-x-6 lg:hidden"> 
+                        <YouTube color="secondary" onClick={YouTube1}/>
+                        <Instagram color="secondary" onClick={Instagram1}/>
+                        <FacebookRounded color="secondary" onClick={facebook1}/>
+                        <WhatsApp color="secondary" onClick={facebook1}/>
+                        <Twitter color="secondary" onClick={WhatsApp1}/>
+                    </div>
                     <button onClick={toogleNav} className=" bg-gradient-to-r from-rose-900 to-rose-400">
                         {mobileOpen ?  <X/> : <Menu/> }
                     </button>
