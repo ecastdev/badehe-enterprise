@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/badehe-enterprise/static/css/main.d3b829db.css",
-    "main.js": "/badehe-enterprise/static/js/main.b334456b.js",
+    "main.js": "/badehe-enterprise/static/js/main.47971b69.js",
     "static/js/453.b320933b.chunk.js": "/badehe-enterprise/static/js/453.b320933b.chunk.js",
     "static/media/finacial.jpg": "/badehe-enterprise/static/media/finacial.72106d2a5edd2351e75c.jpg",
     "static/media/badehe.mp4": "/badehe-enterprise/static/media/badehe.e8cf2c3ac646671b4090.mp4",
@@ -22,11 +22,11 @@
     "static/media/logo_size-removebg-preview.png": "/badehe-enterprise/static/media/logo_size-removebg-preview.e38ca367ad73dd642fbc.png",
     "index.html": "/badehe-enterprise/index.html",
     "main.d3b829db.css.map": "/badehe-enterprise/static/css/main.d3b829db.css.map",
-    "main.b334456b.js.map": "/badehe-enterprise/static/js/main.b334456b.js.map",
+    "main.47971b69.js.map": "/badehe-enterprise/static/js/main.47971b69.js.map",
     "453.b320933b.chunk.js.map": "/badehe-enterprise/static/js/453.b320933b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d3b829db.css",
-    "static/js/main.b334456b.js"
+    "static/js/main.47971b69.js"
   ]
 }
