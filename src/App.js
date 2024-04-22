@@ -38,9 +38,10 @@ import { Web } from "./components/explore/explore_pages/web";
 import Ourproject from "./components/Ourproject/ourproject";
 import Poster from "./components/explore/explore_pages/poster";
 import ExploreService from "./components/explore/explore";
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import {  RouterProvider,  createHashRouter } from 'react-router-dom';
 import Electrical from './components/explore/explore_pages/elecrical';
 import { Oil } from './components/explore/explore_pages/oil';
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // import { Oil } from "./components/explore/explore_pages/oil";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -82,7 +83,7 @@ function App() {
 // }, []);
 
 
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: "/",
       element: <ExploreService/>,
@@ -117,7 +118,7 @@ function App() {
           element: <Finacial/>
         },
         {
-          path: "expore_pages/poster",
+          path: "explore_pages/poster",
           element: <Poster/>
         },
         {
@@ -177,6 +178,8 @@ function App() {
          <ChooseUs/>
           <div className='relative w-full '>
             <div className=''>
+            
+         
             <RouterProvider router={router}/>
            
             </div>

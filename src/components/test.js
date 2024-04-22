@@ -53,7 +53,7 @@ function Test(){
         {
             sidetitle:'Electrical wire installation',
             icon:<ElectricalServices color='secondary'/>, 
-            myto: 'expore_pages/netinstallation',
+            myto: 'expore_pages/electrical',
         },
         {
             sidetitle:'other related IT issues',
