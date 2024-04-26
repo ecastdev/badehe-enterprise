@@ -1,4 +1,4 @@
-import { finacial,computer } from "../../assest/assest";
+
 import Fab from '@mui/material/Fab';
 import Swal from 'sweetalert2';
 import emailjs from '@emailjs/browser';
@@ -9,6 +9,8 @@ import { useRef, useState,useEffect} from "react";
 import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { getDocs,collection } from "firebase/firestore";
+import badehestore from '../../firebase-badehe/firebase-badehe';
 
 export default function Poster(){
    const scrollref = useRef();
@@ -44,32 +46,19 @@ export default function Poster(){
    }, []);
    // fetcg data from firebase
    // firebase data
-   // const [datafire, setdatafire] = useState([]);
-   // useEffect(() => {
-   //   const fetchData = async () => {
-   //       // const dataRef = firestore.collection("your_collection");
-   //       const querySnapshot = await getDocs(collection(badehestore, "all"));
-   //       // const snapshot = await dataRef.get();
-   //       const items = querySnapshot.docs.map((doc) => doc.data());
-   //       setdatafire(items);
-   //     };
+   const [datafire, setdatafire] = useState([]);
+   useEffect(() => {
+     const fetchData = async () => {
+         // const dataRef = firestore.collection("your_collection");
+         const querySnapshot = await getDocs(collection(badehestore, "poster"));
+         // const snapshot = await dataRef.get();
+         const items = querySnapshot.docs.map((doc) => doc.data());
+         setdatafire(items);
+       };
    
-   //     fetchData();
-   // }, []);
- const imgData = [ 
-   {
-     img: finacial,
-    
+       fetchData();
+   }, []);
  
-   },
-   {
-     img: computer,
-    
- 
-   },
-  
-  
- ];
  // alert button
   
  // send purchase
@@ -106,55 +95,54 @@ export default function Poster(){
  };
  
  
-   return (
-   <div ref={scrollref}   className=" grid gap-4 grid-cols-2 sm:grid-cols-3  md:grid-cols-5 lg:grid-cols-5  place-content-center items-center" >
-     {imgData.map((img) =>(
-     <div id="explore" className="  group  hover:opacity-0 relative grid max-w-52 md:max-w-60 lg:max-w-72 max-h-72   rounded-lg bg-purple-200 shadow-xl shadow-slate-900 transition-shadow">
-        <img src={img.img} alt="img"/>
-        <p className="text-lg lg:text-xl text-purple-500 text-center">{img.content}</p>
-        {/* hover button */}
-        
-             {/* dialog popup form */}
-             <Popup trigger=
-                 {
-                   <div className=" transition  text-center transform mt-16 shadow-lg shadow-purple-900
-         translate-y-8 ease invisible    absolute group-hover:visible pr-10 m1-4
-         text-white  group-hover:translate-y-0 rounded-full focus:ring-2 focus:ring-purple-700 focus:ring-opacity-50 ">
-            <Fab variant="extended" color="secondary" >
-                 {/* <NavigationIcon sx={{ mr: 1 , color:'secondary'}} /> */}
-                         Purchase
-             </Fab> 
-             </div>
-                 } 
-                 modal nested>
-                 {
-                     close => (
-                         <div className='modal bg-purple-200'>
-                             <form className='grid py-4' ref={form} onSubmit={sendEmail}>
-                     <label className='font-bold text-orange-500 text-sm lg:text-xl md:text-lg text-center'>Name</label>
-                     <input type="text" name="user_name" placeholder='write your name' className=" my-3 text-center border border-orange-600 rounded-lg focus:ring-2 focus:ring-purple-700 focus:ring-opacity-50" />
-                     <label className=' font-bold text-orange-500 text-sm lg:text-xl md:text-lg text-center'>Email</label>
-                     <input type="email" name="user_email" placeholder='write your email' className="  my-3 text-center border border-orange-600 rounded-lg focus:ring-2 focus:ring-purple-700 focus:ring-opacity-50" />
-                     <label className='text-orange-500 font-bold text-sm lg:text-xl md:text-lg text-center'>Submit your purchase</label>
-                     <textarea name="message" className=" my-3 text-center border border-orange-600 rounded-lg focus:ring-2 focus:ring-purple-700 focus:ring-opacity-50" />
-                     <input className='bg-gradient-to-r from-rose-900 to-rose-400 bg-clip rounded-2xl my-3' type="submit" value="Send" />
-                 </form>
-                             {/* <div>
-                                 <button className="text-center bg-gradient-to-r from-rose-900 to-rose-400 bg-clip rounded-lg" onClick=
-                                     {() => close()}>
-                                         Cloe
-                                 </button>
-                             </div> */}
-                         </div>
-                     )
-                 }
-             </Popup>
-             
-          
-        </div>
-   
-     ))}
-   </div>
-
-      );
+ return (
+  <div ref={scrollref}   className=" grid gap-4 grid-cols-2 sm:grid-cols-3  md:grid-cols-5 lg:grid-cols-5  place-content-center items-center" >
+    {datafire.map((badehe) =>(
+    <div id="explore" className="  group  hover:opacity-0 relative grid max-w-52 md:max-w-60 lg:max-w-72 max-h-72   rounded-lg bg-purple-200 shadow-xl shadow-slate-900 transition-shadow">
+       <img src={badehe.thePicture} alt="img"/>
+       <p className="text-lg lg:text-xl text-purple-500 text-center">{badehe.Btitle}</p>
+       {/* hover button */}
+       
+            {/* dialog popup form */}
+            <Popup trigger=
+                {
+                  <div className=" transition  text-center transform mt-16 shadow-lg shadow-purple-900
+        translate-y-8 ease invisible    absolute group-hover:visible pr-10 m1-4
+        text-white  group-hover:translate-y-0 rounded-full focus:ring-2 focus:ring-purple-700 focus:ring-opacity-50 ">
+           <Fab variant="extended" color="secondary" >
+                {/* <NavigationIcon sx={{ mr: 1 , color:'secondary'}} /> */}
+                        Purchase
+            </Fab> 
+            </div>
+                } 
+                modal nested>
+                {
+                    close => (
+                        <div className='modal bg-purple-200'>
+                            <form className='grid py-4' ref={form} onSubmit={sendEmail}>
+                    <label className='font-bold text-orange-500 text-sm lg:text-xl md:text-lg text-center'>Name</label>
+                    <input type="text" name="user_name" placeholder='write your name' className=" my-3 text-center border border-orange-600 rounded-lg focus:ring-2 focus:ring-purple-700 focus:ring-opacity-50" />
+                    <label className=' font-bold text-orange-500 text-sm lg:text-xl md:text-lg text-center'>Email</label>
+                    <input type="email" name="user_email" placeholder='write your email' className="  my-3 text-center border border-orange-600 rounded-lg focus:ring-2 focus:ring-purple-700 focus:ring-opacity-50" />
+                    <label className='text-orange-500 font-bold text-sm lg:text-xl md:text-lg text-center'>Submit your purchase</label>
+                    <textarea name="message" className=" my-3 text-center border border-orange-600 rounded-lg focus:ring-2 focus:ring-purple-700 focus:ring-opacity-50" />
+                    <input className='bg-gradient-to-r from-rose-900 to-rose-400 bg-clip rounded-2xl my-3' type="submit" value="Send" />
+                </form>
+                            {/* <div>
+                                <button className="text-center bg-gradient-to-r from-rose-900 to-rose-400 bg-clip rounded-lg" onClick=
+                                    {() => close()}>
+                                        Cloe
+                                </button>
+                            </div> */}
+                        </div>
+                    )
+                }
+            </Popup>
+            
+         
+       </div>
+  
+    ))}
+  </div>
+  );
 }

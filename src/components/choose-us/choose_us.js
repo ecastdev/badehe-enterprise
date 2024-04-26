@@ -9,9 +9,9 @@ import { dataAnalyis, technology } from "../assest/assest";
 
 gsap.registerPlugin(ScrollTrigger)
 function ChooseUs() {
-    const choseref = useRef();
+    // const choseref = useRef();
     
-    const [preloader ,setPreloader] = useState(true);
+    // const [preloader ,setPreloader] = useState(true);
 
     const chooseUs = [
         {

@@ -1,12 +1,11 @@
 import React, { useRef, useLayoutEffect, useEffect } from "react";
-import { ScrollTrigger } from "gsap/all";
-import gsap from "gsap/gsap-core";
-import { useGSAP } from "@gsap/react";
+// import { ScrollTrigger } from "gsap/all";
+// import gsap from "gsap/gsap-core";
+// import { useGSAP } from "@gsap/react";
 // import { SplitText } from "gsap/SplitText";
 import { Business, Email, FacebookRounded, Instagram, WhatsApp, Twitter, YouTube } from "@mui/icons-material";
 import AddLocationIcon from "@mui/icons-material/AddLocation";
 import "./footer.css";
-import { dataAnalyis } from "../assest/assest";
 import Lottie from 'lottie-react';
 import animateData from '../intro/R3VYtxKiYZ (1).json';
 

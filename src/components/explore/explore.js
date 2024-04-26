@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import gsap from "gsap";
 import { useGSAP } from '@gsap/react';
-import { ScrollTrigger } from "gsap/all";
-import { Outlet, Link } from 'react-router-dom';
+// import { ScrollTrigger } from "gsap/all";
+import { Outlet} from 'react-router-dom';
 import Test from '../test';
 import TestMobile from '../intro/test2';
 

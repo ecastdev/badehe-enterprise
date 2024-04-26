@@ -1,6 +1,5 @@
-import { Box, Button, IconButton, Typography } from "@mui/material";
+import {  Button } from "@mui/material";
 // import { easeInOut, motion, useAnimate } from "framer-motion";
-import Fab from '@mui/material/Fab';
 // import { Facebook, FacebookRounded, Instagram, WhatsApp, YouTube } from "@mui/icons-material";
 import { useState } from "react";
 // import Aos from 'aos';
@@ -23,7 +22,7 @@ function Intro(){
             delay: 0.5,
         })
     }, []);
-    const [send1, setSend1] = useState("");
+
     //  const send = () => {
 
     //         window.location.href = 'https://www.google.com';

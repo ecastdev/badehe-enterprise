@@ -1,8 +1,8 @@
-import { Album, BusinessSharp, CalendarViewDay, Camera, Computer, Dashboard, DesignServices, ElectricalServices, FoodBank,  NetworkWifi, OilBarrel,  Plumbing, Snowshoeing,  } from '@mui/icons-material';
-import Toolbar from '@mui/material/Toolbar';
-import Divider from '@mui/material/Divider';
-import React, { Component } from "react";
-import Slider from "react-slick";
+import { BusinessSharp, CalendarViewDay, Camera, Computer, Dashboard, DesignServices, ElectricalServices, FoodBank,  NetworkWifi, OilBarrel,  Plumbing  } from '@mui/icons-material';
+// import Toolbar from '@mui/material/Toolbar';
+// import Divider from '@mui/material/Divider';
+// import React, { Component } from "react";
+// import Slider from "react-slick";
 
 
 const { Link, NavLink } = require("react-router-dom");
@@ -104,7 +104,7 @@ function Test(){
     return(
         
             <div className="grid  gap-2">
-                <Toolbar />
+                
                     {sidebarData.map((side1) =>(
                         <Link to={side1.myto} className='text-slate-900 text-xl  w-full h-full'>
                             <div className='flex gap-5'>

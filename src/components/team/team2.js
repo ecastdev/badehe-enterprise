@@ -2,7 +2,7 @@ import { ally, anitha, finacial, leticia, peter, stephe } from "../assest/assest
  import { LocationOn } from "@mui/icons-material";
  import { Person } from "@mui/icons-material";
 import OurNews from "../Latest/latest";
-import Ourproject from "../Ourproject/ourproject";
+// import Ourproject from "../Ourproject/ourproject";
 function Team2(){
     const teamData= [
         {

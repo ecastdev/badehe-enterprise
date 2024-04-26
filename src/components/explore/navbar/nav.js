@@ -1,22 +1,24 @@
-import { Menu, Phone, X } from "@mui/icons-material";
+import { Menu, X } from "@mui/icons-material";
 import { useState } from "react";
 import Fab from '@mui/material/Fab';
 import NavigationIcon from '@mui/icons-material/Navigation';
 // import logo from './logo_badede.jpeg'
 import { FacebookRounded, Instagram, Twitter, WhatsApp, YouTube } from "@mui/icons-material";
-import { auth, app } from "./chatfirebase";
+// import { auth, app } from "./chatfirebase";
 import { GoogleAuthProvider, onAuthStateChanged, signInWithPopup } from 'firebase/auth';
+
 import { getFirestore,onSnapshot, collection, addDoc, orderBy, query, serverTimestamp} from 'firebase/firestore';
 import {  useEffect } from 'react';
 import { logo } from "../../assest/assest";
+import { app, auth } from "../../firebase-badehe/firebase-badehe";
 
 
-const db = getFirestore(app) ;
+const db = getFirestore(app) ; 
 
 function Nav(){
     const [user, setUser] = useState(null);
-  const [messages, setMessages] = useState([]);
-  const [newMessage, setNewMessage] = useState("");
+//   const [messages, setMessages] = useState([]);
+//   const [newMessage, setNewMessage] = useState("");
     // facebook
     const facebook1 = () => {
         
@@ -118,7 +120,7 @@ const Instagram1 = () => {
                     {/* sign in */}
                     {user ? (
                         <div>
-                        <img src={user.photoURL} className=" w-8 rounded-3xl"/>
+                        <img src={user.photoURL} className=" w-8 rounded-3xl"  alt={user}/>
                         <button className='mb-8  bg-rose-900 rounded-[10px] p-1 my-0' onClick={() => auth.signOut()}>Logout</button>
                         </div>
                     ): (

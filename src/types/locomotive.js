@@ -140,6 +140,7 @@ class Smooth extends Core {
   setScroll(x, y) {}
 
   destroy() {}
+  
 }
 
 // Exporting interfaces

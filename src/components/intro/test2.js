@@ -1,11 +1,11 @@
-import { Album, BusinessSharp, CalendarViewDay, Camera, Computer, Dashboard, DesignServices, ElectricalServices, FoodBank,  NetworkWifi, OilBarrel,  Plumbing, Snowshoeing,  } from '@mui/icons-material';
-import Toolbar from '@mui/material/Toolbar';
-import Divider from '@mui/material/Divider';
-import React, { Component } from "react";
+import {  BusinessSharp, CalendarViewDay, Camera, Computer, Dashboard, DesignServices, ElectricalServices, FoodBank,  NetworkWifi, OilBarrel,  Plumbing  } from '@mui/icons-material';
+// import Toolbar from '@mui/material/Toolbar';
+// import Divider from '@mui/material/Divider';
+// import React, { Component } from "react";
 // import "react-alice-carousel/lib/alice-carousel.css";
 // import "react-alice-carousel/lib/alice-carousel.css";
 // import AliceCarousel from 'react-alice-carousel';
-import { Swiper, SwiperSlide } from 'swiper/react';
+// import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -15,7 +15,7 @@ import 'swiper/css/navigation';
 
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+// import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 
 
@@ -64,7 +64,7 @@ function TestMobile(){
             icon:<NetworkWifi color='secondary'/>,
             myto: 'page/networkInstallation', 
         },
-        {
+        {    
             sidetitle:'Electrical wire installation',
             icon:<ElectricalServices color='secondary'/>, 
             myto: 'expore_pages/electrical',
@@ -97,29 +97,29 @@ function TestMobile(){
             myto: 'explore_pages/finacial',
         },
     ]
-    const sidebarData2 = [
-        {
-            sidetitle:'Food supply',
-            icon:<FoodBank color='secondary'/>, 
-            myto: 'expore_pages/foodsupply',
-        },
-        {
-            sidetitle:'Pluming services',
-            icon:<Plumbing color='secondary'/>, 
-            myto: 'page/plumbing',
-        },
-        {
-            sidetitle:'Mineral oil',
-            icon:<OilBarrel color='secondary'/>,
-            myto: 'expore_pages/oil',
+    // const sidebarData2 = [
+    //     {
+    //         sidetitle:'Food supply',
+    //         icon:<FoodBank color='secondary'/>, 
+    //         myto: 'expore_pages/foodsupply',
+    //     },
+    //     {
+    //         sidetitle:'Pluming services',
+    //         icon:<Plumbing color='secondary'/>, 
+    //         myto: 'page/plumbing',
+    //     },
+    //     {
+    //         sidetitle:'Mineral oil',
+    //         icon:<OilBarrel color='secondary'/>,
+    //         myto: 'expore_pages/oil',
             
-        },
-        {
-            sidetitle:'Finacial Business',
-            icon:<BusinessSharp color='secondary'/>, 
-            myto: 'page/networkInstallation',
-        },
-    ]
+    //     },
+    //     {
+    //         sidetitle:'Finacial Business',
+    //         icon:<BusinessSharp color='secondary'/>, 
+    //         myto: 'page/networkInstallation',
+    //     },
+    // ]
     // scroll
 
     return(

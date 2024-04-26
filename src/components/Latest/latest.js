@@ -8,13 +8,13 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './latest.css';
-import { badevits, dataAnalyis, questions } from '../assest/assest';
+import {  questions } from '../assest/assest';
 function OurNews(){
-    const dailyNews = [
-        {
-            news: ''
-        }
-    ]
+    // const dailyNews = [
+    //     {
+    //         news: ''
+    //     }
+    // ]
     return(
         <div className="grid  mt-32 md:my-52 lg:my-96 w-screen  place-content-center  max-w-7xl  ">
             <h1 className="  text-4xl lg:text-6xl text-center text-slate-200 text-clip">Latest News</h1>
@@ -69,7 +69,7 @@ function OurNews(){
                     </div>
                     <div className="flex  mt-7 ml-52 items-center" data-swiper-parallax="-200">
                       <p className='subtitle text-center text-white text-2xl'>Do you wish to be designer</p> 
-                      <img src={questions} className='w-52 h-32'/>
+                      <img src={questions} className='w-52 h-32' alt='question'/>
                     </div>
                     <div className="text" data-swiper-parallax="-100">
                       <p className='text-center text-xl lg:text-2xl text-white'>

@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-// import Swal from 'sweetalert2';
+import Swal from 'sweetalert2';
 
 function Form(){
     const form = useRef();
@@ -15,23 +15,23 @@ function Form(){
       .then(
         () => {
           console.log('SUCCESS!');
-        //   Swal.fire({
-        //     position: "top-end",
-        //     icon: "success",
-        //     title: "Message submitted ",
-        //     showConfirmButton: false,
-        //     timer: 1500
-        //   });
+          Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Message submitted ",
+            showConfirmButton: false,
+            timer: 1500
+          });
         
         },
         (error) => {
           console.log('FAILED...', error.text);
-        //   Swal.fire({
-        //     icon: "error",
-        //     title: "Oops...",
-        //     text: "check your internet connection !",
-        //     footer: '<a href="#">Why do I have this issue?</a>'
-        //   });
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "check your internet connection !",
+            footer: '<a href="#">Why do I have this issue?</a>'
+          });
         },
       );
   };

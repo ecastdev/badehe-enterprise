@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { banner, blog,cctv,electrical,finacial,food, website } from "../../assest/assest";
+
 import '../card.css';
 import { useRef, useState,useEffect} from "react";
 import { ScrollTrigger } from "gsap/all";
@@ -13,8 +13,7 @@ import Swal from 'sweetalert2';
 import emailjs from '@emailjs/browser';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
-
-// import { getDocs,collection } from "firebase/firestore";
+import { getDocs,collection } from "firebase/firestore";
 
 
 
@@ -52,87 +51,22 @@ export const Banner = ({ title }) => {
         
     })
   }, []);
+  
   // fetcg data from firebase
   // firebase data
-  // const [datafire, setdatafire] = useState([]);
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //       // const dataRef = firestore.collection("your_collection");
-  //       const querySnapshot = await getDocs(collection(badehestore, "all"));
-  //       // const snapshot = await dataRef.get();
-  //       const items = querySnapshot.docs.map((doc) => doc.data());
-  //       setdatafire(items);
-  //     };
+  const [datafire, setdatafire] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+        // const dataRef = firestore.collection("all");
+        const querySnapshot = await getDocs(collection(badehestore, "all"));
+        // const snapshot = await dataRef.get();
+        const items = querySnapshot.docs.map((doc) => doc.data());
+        setdatafire(items);
+      };
   
-  //     fetchData();
-  // }, []);
-const imgData = [ 
-  {
-    img: website,
-    content:"web development"
+      fetchData();
+  }, []);
 
-  },
-  {
-    img: finacial,
-    content:"finacial bussiness"
-
-  },
-  {
-    img: electrical,
-    content:"electrical installation"
-
-  },
-  {
-    img: finacial,
-    content:"banner design"
-
-  },
-  {
-    img: website,
-    content:"bussiness card design"
-
-  },
-  {
-    img: website,
-    content:"cctv installation"
-
-  },
-  {
-    img: website,
-    content:"calendar"
-
-  },
-  {
-    img: website,
-    content:"calendar design"
-
-  },
-  {
-    img: website,
-    content:"advertisement"
-
-  },
-  {
-    img: website,
-    content:"plubing"
-
-  },
-  {
-    img: food,
-    content:"food supply"
-
-  },
-  {
-    img: website,
-    content:"network installation"
-
-  },
-  {
-    img: website,
-    content:"logo design"
-
-  },
-];
 // alert button
  
 // send purchase
@@ -171,10 +105,10 @@ const sendEmail = (e) => {
 
   return (
   <div ref={scrollref}   className=" grid gap-4 grid-cols-2 sm:grid-cols-3  md:grid-cols-5 lg:grid-cols-5  place-content-center items-center" >
-    {imgData.map((img) =>(
+    {datafire.map((badehe) =>(
     <div id="explore" className="  group  hover:opacity-0 relative grid max-w-52 md:max-w-60 lg:max-w-72 max-h-72   rounded-lg bg-purple-200 shadow-xl shadow-slate-900 transition-shadow">
-       <img src={img.img} alt="img"/>
-       <p className="text-lg lg:text-xl text-purple-500 text-center">{img.content}</p>
+       <img src={badehe.thePicture} alt="img"/>
+       <p className="text-lg lg:text-xl text-purple-500 text-center">{badehe.Btitle}</p>
        {/* hover button */}
        
             {/* dialog popup form */}

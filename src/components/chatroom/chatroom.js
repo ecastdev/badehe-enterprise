@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
-import { GoogleAuthProvider, onAuthStateChanged, signInWithPopup } from 'firebase/auth';
+import { GoogleAuthProvider,  onAuthStateChanged, signInWithPopup } from 'firebase/auth';
 import { getFirestore,onSnapshot, collection, addDoc, orderBy, query, serverTimestamp} from 'firebase/firestore';
-import { auth, app } from '../explore/navbar/chatfirebase';
-// import Swal from 'sweetalert2';
+// import { auth, app } from '../explore/navbar/chatfirebase';
+import Swal from 'sweetalert2';
+import { app, auth } from '../firebase-badehe/firebase-badehe';
 
-const db = getFirestore(app) ;
+
+const db = getFirestore(app) 
 
 
 function Chatroom() {

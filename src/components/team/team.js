@@ -1,10 +1,9 @@
-import { LocationOn,  Person } from "@mui/icons-material";
-import { blog, dataAnalyis } from "../assest/assest";
+
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 // import { ScrollTrigger } from "gsap/all";
 import { useRef } from "react";
-import OurNews from "../Latest/latest";
+
 import React from "react";
 import { motion } from "framer-motion";
 import Team2 from "./team2";

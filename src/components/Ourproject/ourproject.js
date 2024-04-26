@@ -1,7 +1,7 @@
-import React, { useRef, useState } from 'react';
+// import React, { useRef, useState } from 'react';
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { badevits, finacial, food, website, } from '../assest/assest'; 
+import { Swiper} from 'swiper/react';
+import { badevits,  } from '../assest/assest'; 
 
 // Import Swiper styles
 import 'swiper/css';
