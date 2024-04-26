@@ -43,7 +43,7 @@ function OurNews(){
                       data-swiper-parallax="-23%"
                     ></div>
                   <SwiperSlide className='relative'>
-                    <div className="title text-purple-200 font-extrabold text-center text-2xl  lg:text-5xl  mt-6" data-swiper-parallax="-300">
+                    <div className="title text-purple-200 font-extrabold text-center text-3xl  lg:text-6xl  mt-6" data-swiper-parallax="-300">
                     <span className='bg-gradient-to-r from-rose-900 to-purple-400 text-transparent bg-clip-text'>Computer <br/>  Application</span> <br/> Courses and Programing 
                     </div>
                     <div className='flex items-center ml-20 justify-center'>
@@ -67,7 +67,7 @@ function OurNews(){
                     <div className=" text-3xl bg-gradient-to-r from-rose-900 to-purple-400 bg-transparent bg-clip-text text-white text-center mt-10 font-bold  underline decoration-rose-500" data-swiper-parallax="-300">
                       Graphic design
                     </div>
-                    <div className="flex  mt-7 ml-52 items-center" data-swiper-parallax="-200">
+                    <div className="flex  mt-7 ml:28 lg:ml-52  items-center" data-swiper-parallax="-200">
                       <p className='subtitle text-center text-white text-2xl'>Do you wish to be designer</p> 
                       <img src={questions} className='w-52 h-32' alt='question'/>
                     </div>

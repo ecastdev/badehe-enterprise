@@ -25,13 +25,13 @@ function Team2(){
 
         },
         {
-            picture: anitha,
+            picture: leticia,
             title:'Network officer',
             name: "Anitha Alex Rugehubinza",
             location:'Tanzania',
         },
         {
-            picture: leticia,
+            picture:  anitha ,
             title:'Public relation officer and Marketing manager ',
             name: "Leticia Mashini Sahani",
             location:'Tanzania',
