@@ -20,6 +20,11 @@ function Test(){
             myto: 'expore_pages/cctvinst',
         },
         {
+            sidetitle:'Web development',
+            icon:<Camera color='secondary'/>, 
+            myto: 'web',
+        },
+        {
             sidetitle:'Poster Design',
             icon:<DesignServices color='secondary'/>, 
             myto: 'explore_pages/poster',

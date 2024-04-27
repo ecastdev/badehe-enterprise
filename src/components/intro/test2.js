@@ -34,6 +34,11 @@ function TestMobile(){
             myto: 'expore_pages/cctvinst',
         },
         {
+            sidetitle:'Web development',
+            icon:<Camera color='secondary'/>, 
+            myto: 'web',
+        },
+        {
             sidetitle:'Poster Design',
             icon:<DesignServices color='secondary'/>, 
             myto: 'expore_pages/poster',

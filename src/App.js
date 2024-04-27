@@ -147,7 +147,7 @@ function App() {
           element: <Plumbing/>
         },
         {
-          path: "expore_pages/webdev",
+          path: "web",
           element: <Web/>
         },
         {
