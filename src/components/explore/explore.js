@@ -41,7 +41,7 @@ export default function ExploreService() {
   }, []);
 
   return (
-    <div className='lg:overflow-hidden  flex flex-col   bg-purple-300 w-screen h-auto md:h-screen lg:h-screen mb-20 lg:mb-24 my-32 ' data-scroll-section>
+    <div className='lg:overflow-scroll   flex flex-col   bg-purple-300 w-screen h-auto md:h-screen lg:h-screen mb-20 lg:mb-24 my-32 ' data-scroll-section>
       <h1 id='scrol' className=' font-subt text-center text-white text-clip text-2xl md:text-5xl lg:text-4xl'>
         Explore <br />
         <span className=' font-title text-center text-slate-600 text-clip text-2xl md:text-5xl lg:text-5xl'>

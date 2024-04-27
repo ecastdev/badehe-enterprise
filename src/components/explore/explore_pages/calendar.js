@@ -100,7 +100,7 @@ const sendEmail = (e) => {
 return (
   <div ref={scrollref}   className=" grid gap-4 grid-cols-2 sm:grid-cols-3  md:grid-cols-5 lg:grid-cols-5  place-content-center items-center" >
     {datafire.map((badehe) =>(
-    <div id="explore" className="  group  hover:opacity-0 relative grid max-w-52 md:max-w-60 lg:max-w-72 max-h-72   rounded-lg bg-purple-200 shadow-xl shadow-slate-900 transition-shadow">
+    <div id="explore" className="  group   relative grid max-w-52 md:max-w-60 lg:max-w-72 max-h-72   rounded-lg bg-purple-200 shadow-xl shadow-slate-900 transition-shadow">
        <img src={badehe.thePicture} alt="img"/>
        <p className="text-lg lg:text-xl text-purple-500 text-center">{badehe.Btitle}</p>
        {/* hover button */}
